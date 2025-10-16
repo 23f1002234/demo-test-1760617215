@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hello World page: show <h1>Hello World</h1></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <style>body{padding:2rem}</style>
+</head>
+<body>
+  <main class="container">
+    <h1 class="mb-3">Hello World page: show <h1>Hello World</h1></h1>
+    <p class="text-muted">Hello World page: show <h1>Hello World</h1> and an element with id 'hello'.</p>
+    <div id="app"></div>
+    <hr/>
+    <small class="text-muted">Generated 2025-10-16T12:20:15.996948Z</small>
+  </main>
+  <script>
+  // Add your task-specific JS here based on the brief/checks
+  console.log("Checks:", ["document.querySelector('#hello') !== null", 'document.title']);
+  // Example: if brief mentions Hello World:
+  if (False) {
+      const d = new Date();
+      document.title = "Hello World page: show <h1>Hello World</h1>";
+      document.getElementById("app").innerHTML =
+        "<h2>Hello World</h2><p>Today: " + d.toISOString().split('T')[0] + "</p>";
+  }
+  </script>
+</body>
+</html>
